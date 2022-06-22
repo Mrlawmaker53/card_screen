@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">card_screen</string>
+    <string name="title_name">Cart</string>
+    <string name="search_text">30365 conhamza hasd</string>
+    <string name="keyfoodharien">key Food harien</string>
+    <string name="DeliveryTomorrow9pm">Delivery Tomorrow 9pm</string>
+    <string name="pickupmin">pickup 30min</string>
+    <string name="storeinfo">store info</string>
+    <string name="address_124">124W 124th street,New york,NY 10027</string>
+    <string name="esttomorrow">Est Tomorrow 9 AM</string>
+    <string name="dove_string">DOVE Hair Fall Rescue</string>
+    <string name="ml_value">(180 ml)</string>
+    <string name="price_value">$5.00/pc</string>
+    <string name="remove_value">Remove</string>
+    <string name="qty">qty</string>
+    <string name="total">total $200.00</string>
+    <string name="themin_value">the minimum order  amount is \u0024 100.00</string>
+    <string name="subtotal_value">Subtotal</string>
+    <string name="subtotal_rs_value">10.00</string>
+    <string name="service_value">Service Tax</string>
+    <string name="deliveryfees">Delivery Fees</string>
+
+</resources>

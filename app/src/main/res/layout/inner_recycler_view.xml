@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+
+    <ImageView
+        android:id="@+id/img_id"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/flexqube_eqart" />
+
+    <TextView
+        android:id="@+id/dove_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="@string/dove_string"
+        app:layout_constraintBottom_toTopOf="@+id/ml_id"
+        app:layout_constraintStart_toEndOf="@+id/img_id"
+        app:layout_constraintTop_toTopOf="@+id/img_id" />
+
+    <TextView
+        android:id="@+id/ml_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="@string/ml_value"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/pc_id"
+        app:layout_constraintStart_toEndOf="@+id/img_id"
+        app:layout_constraintTop_toBottomOf="@+id/dove_id" />
+
+    <TextView
+        android:id="@+id/pc_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:text="@string/price_value"
+        app:layout_constraintBottom_toBottomOf="@+id/img_id"
+        app:layout_constraintStart_toEndOf="@+id/img_id"
+        app:layout_constraintTop_toBottomOf="@+id/ml_id" />
+
+    <Spinner
+        android:id="@+id/qty_spinner_id"
+        android:layout_width="66dp"
+        android:layout_height="21dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img_id" />
+
+    <TextView
+        android:id="@+id/qty_text_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/qty"
+        app:layout_constraintBottom_toBottomOf="@+id/dove_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/qty_spinner_id"
+        app:layout_constraintTop_toTopOf="@+id/dove_id" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pc_id"
+        app:layout_constraintStart_toEndOf="@+id/pc_id"
+        app:layout_constraintTop_toTopOf="@+id/pc_id">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/remove_value"
+            android:textColor="@color/primary_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/textView12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView12"
+            app:layout_constraintTop_toTopOf="@+id/textView12"
+            app:srcCompat="@drawable/ic_baseline_delete_outline_24" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

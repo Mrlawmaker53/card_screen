@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="130dp"
+    android:layout_height="50dp"
+    android:layout_margin="3dp"
+    android:padding="3dp"
+    android:background="@drawable/dark_layout_textview"
+    >
+
+    <TextView android:textAlignment="center"
+        android:padding="5dp"
+        android:id="@+id/DeliveryTomorrow9pm_dark_id"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        android:background="@drawable/dark_layout_textview"
+        android:text="@string/DeliveryTomorrow9pm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pickup30min_dark_id"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView android:textAlignment="center"
+        android:padding="5dp"
+        android:id="@+id/pickup30min_dark_id"
+        android:background="@drawable/dark_layout_textview"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        android:text="@string/pickupmin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/DeliveryTomorrow9pm_dark_id"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:textAlignment="center"
+        android:id="@+id/DeliveryTomorrow9pm_light_id"
+        android:layout_width="60dp"
+        android:lines="2"
+        android:padding="5dp"
+
+        android:visibility="invisible"
+        android:background="@drawable/light_layout_textview"
+        android:layout_height="wrap_content"
+        android:text="@string/DeliveryTomorrow9pm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pickup30min_light"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:textAlignment="center"
+        android:id="@+id/pickup30min_light"
+        android:layout_width="60dp"
+        android:lines="2"
+        android:padding="5dp"
+        android:background="@drawable/light_layout_textview"
+        android:layout_height="wrap_content"
+        android:text="@string/pickupmin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/DeliveryTomorrow9pm_light_id"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
